@@ -1,0 +1,15 @@
+---
+layout: default
+title: Handy
+---
+
+<p class="lead">
+This site holds short summaries of some of the research I have worked on. There are overlaps between the sections, as I've tried to describe my work as post-sized ideas, rather than just listing projects.
+</p>
+
+{% for post in site.posts %}
+  {{ post.content }}
+  <hr />
+{% endfor %}
+
+
